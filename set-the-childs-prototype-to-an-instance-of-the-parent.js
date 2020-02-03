@@ -2,7 +2,7 @@
 Modify the code so that instances of Dog inherit from Animal.
 */
 
-function Animal() { }
+function Animal() {}
 
 Animal.prototype = {
   constructor: Animal,
@@ -11,7 +11,7 @@ Animal.prototype = {
   }
 };
 
-function Dog() { }
+function Dog() {}
 
 Dog.prototype = Object.create(Animal.prototype);
 

@@ -1,5 +1,7 @@
 /*
-The eat method is repeated in both Cat and Bear. Edit the code in the spirit of DRY by moving the eat method to the Animal supertype.
+The eat method is repeated in both Cat and Bear. 
+
+Edit the code in the spirit of DRY by moving the eat method to the Animal supertype.
 */
 
 function Cat(name) {
@@ -7,7 +9,7 @@ function Cat(name) {
 }
 
 Cat.prototype = {
-  constructor: Animal,
+  constructor: Animal
 };
 
 function Bear(name) {
@@ -15,10 +17,10 @@ function Bear(name) {
 }
 
 Bear.prototype = {
-  constructor: Animal,
+  constructor: Animal
 };
 
-function Animal() { }
+function Animal() {}
 
 Animal.prototype = {
   constructor: Animal,

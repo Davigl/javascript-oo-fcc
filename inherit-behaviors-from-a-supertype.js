@@ -1,10 +1,13 @@
 /*
-There are some disadvantages when using this syntax for inheritance, which are too complex for the scope of this challenge. Instead, here's an alternative approach without those disadvantages.
+There are some disadvantages when using this syntax for inheritance,
+which are too complex for the scope of this challenge. 
+
+Instead, here's an alternative approach without those disadvantages.
 
 Use Object.create to make two instances of Animal named duck and beagle.
 */
 
-function Animal() { }
+function Animal() {}
 
 Animal.prototype = {
   constructor: Animal,
@@ -13,7 +16,7 @@ Animal.prototype = {
   }
 };
 
-let duck = Object.create(Animal.prototype); 
+let duck = Object.create(Animal.prototype);
 let beagle = Object.create(Animal.prototype);
 
 duck.eat(); // Should print "nom nom nom"
